@@ -1,4 +1,4 @@
-package com.huangyuqiang.learn.springdataelasticsearch;
+package com.huangyuqiang.learn.springdataelasticsearch.domain;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
@@ -11,6 +11,7 @@ public class User {
     @Id
     private String name;
     private int age;
+    private Address address;
     private String resume;
 
     public String getName() {
@@ -27,6 +28,14 @@ public class User {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     public String getResume() {

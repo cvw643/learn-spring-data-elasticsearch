@@ -24,6 +24,10 @@ repositories {
 }
 
 dependencies {
+//    compile('org.springframework.boot:spring-boot-starter-web')
+//    compile('org.springframework.data:spring-data-elasticsearch:2.0.1.RELEASE')
+
     compile('org.springframework.boot:spring-boot-starter-data-elasticsearch')
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
